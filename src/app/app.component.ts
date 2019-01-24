@@ -21,6 +21,11 @@ export class AppComponent  {
 
   selectedTask: Task = null;
 
+  addTask(newTask: Task) {
+    this.masterTaskList.push(newTask);
+  }
+
+
   editTask(clickedTask){
     this.selectedTask = clickedTask;
   }
